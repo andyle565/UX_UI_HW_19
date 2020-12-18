@@ -17,6 +17,15 @@ nav {
 .navigation {
     margin: auto;
 }
+button {
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 24px;
+    width: 150px;
+    height: 35px;
+    border: white;
+}
 ul, li {
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -171,12 +180,29 @@ footer {
       transform: translateY(-15px);
     }
 }
+.ux:hover {
+    transform: scale(1.1);
+  }
+.ui:hover {
+    transform: scale(1.1);
+  }
+.frontEnd:hover {
+    transform: scale(1.1);
+  }
+  
 @media screen and (max-width: 600px) {
+    .nav, ul, li, button {
+        display: none;
+    }
     .heroImg {
         display: flex;
         flex-direction: column;
         width: 100%;
         text-align: center;
+        padding: 0px;
+    }
+    .rightimg {
+        padding-top: 0px;
     }
     h1 {
         width: 90%;
@@ -196,6 +222,8 @@ footer {
         justify-content: center;
         width: 100%;
         text-align: center;
+        padding: 0px 0px 0px 0px;
+        margin: 0 auto;
     }
     .myWork {
         padding: 0px 0px 0px 0px;
@@ -209,7 +237,7 @@ footer {
     }
     .saraCase {
         display: grid;
-        /*width: 100%;*/
+        width: 100%;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -232,7 +260,9 @@ footer {
     }
     .equilText {
         width: 100%;
+        padding: 0px;
     }
     .equilPic {
         width: 100%;
+        padding: 0px;
     }}
